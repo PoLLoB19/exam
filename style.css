@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+
+}
+body{
+      background-image: url(./pic/shutterstock_2190840355-scaled.jpg);
+      background-size: 100vw;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+}
+
+.row{
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+.row1{
+    margin: 5%;
+    margin-top: 35%;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.mul{
+    border: 3px solid black;
+    width: 15vw;
+overflow: hidden;
+display: flex;
+justify-content: center;
+ flex-direction: column;
+align-items: center;
+position: relative;
+ margin-left: 2%;
+
+}
+
+.mul:hover{
+    animation-name: color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: 2s;
+}
+@keyframes color{
+     0%{
+        border-color: aqua;
+     }
+     25%{
+        border-color: rgb(70, 117, 9);
+     }
+     50%{
+        border-color: rgb(255, 116, 2);
+     }
+     75%{
+        border-color: rgb(192, 21, 214);
+     }
+     100%{
+        border-color: rgb(8, 11, 179);
+     }
+}
+.blank{
+    width: 15vw;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.247);
+   
+    
+}
+.image{
+    width: 10vw;
+   
+}
+.jhamela{
+    position: absolute;
+    display: none;
+    text-align: center;
+}
+.mul:hover  .jhamela{
+    display: block;
+    transition: 2s;
+}
+.p{
+    display: none;
+    position: absolute;
+}
+.mul:hover .p{
+    display: block;
+}
+p{
+   
+    bottom: 10px;
+     font-size: 20px;
+     color: rgb(152, 230, 163);
+     background-color: blue;
+   
+
+}
+
+@media screen and (max-width:600px) {
+    .row{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .mul{
+        margin-top: 2%;
+    }
+
+    .row1{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+
+}
